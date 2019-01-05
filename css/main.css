@@ -1,0 +1,494 @@
+/* Colors
+-----------------------------------
+Black = #090C02
+Dark Red = #A72608
+Red = #E83000
+White = #FBECEC
+
+*/
+
+/* Font declaration
+------------------------------------*/
+
+@font-face{
+	font-family: 'Proxima Nova';
+	src: url(../fonts/proxima-nova.otf);
+}
+
+@font-face{
+	font-family: 'Fira Sans Light';
+	src: url(../fonts/fira-sans-light.otf);
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Global Styles
+-------------------------------------*/
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	margin:0;
+}
+
+h1{	
+	font-size: 130px;
+	text-align: left;
+	letter-spacing: 5px;
+}
+
+h2{
+	font-family: 'Proxima Nova', sans-serif;
+	font-style: italic;
+	color: white;
+	font-size: 75px;
+	text-decoration: overline;
+	margin-top: 0;
+}
+
+h3{
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 0;
+	margin-top: 120px;
+
+}
+
+h4{
+	font-family: 'Proxima Nova', sans-serif;
+	font-size:25px;
+	font-weight: 600;
+	margin-bottom: 0;
+	margin-top: 12px;
+}
+
+h2 + h3{
+	margin:0;
+}
+
+a {
+	color: #E83000;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: circle;
+}
+
+ul li:nth-child(2n+2){
+	list-style: disc;
+}
+
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 65px 50px;
+	overflow:hidden;
+}
+
+.lighter{
+	color:#A72608;
+	font-style: italic;
+}
+
+.btn {
+	text-decoration: none;
+	background: #090C02;
+	color: #FBECEC;
+	padding: 10px;
+	display: inline-block;
+}
+
+
+/* Header and Footer
+------------------------------------*/
+
+/*header*/
+header {
+	background: #A72608;
+	color: #FBECEC;
+	font-size: 20px;
+	padding-top: 50px;
+	position: relative;
+}
+
+header h1, header h2 {
+	color: white;
+	font-family: 'Proxima Nova', sans-serif;
+	margin: 0;
+}
+
+header h2 {
+	font-weight: 500;
+}
+
+.profile-img{
+	width: 300px;
+	border-radius: 50%;
+	padding: 5px;
+	background: #FBECEC
+}
+
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: ridge;
+	border-color: #FBECEC;
+	border-bottom: none;
+}
+
+.up{
+	display:none;
+}
+
+header a {
+    color:#090C02;
+}
+
+/*footer*/
+
+footer {
+	background: #090C02;
+	color: #FBECEC;
+	text-align: center;
+}
+
+footer h2 {
+	margin:0;
+	color: #FBECEC;
+}
+
+.contact-info a{
+	font-family: 'Fira Sans Light', sans-serif;
+	font-size: 40px;
+	padding:30px;
+	display: inline-block;
+}
+
+
+/* Navigation
+----------------------------------*/
+
+
+.navigation {
+	text-align: center;
+	background: #090C02;
+	top: 0;
+	width: 100%;
+	outline-style: ridge;
+	outline-color: #FBECEC;
+	z-index: 100;
+    display:inline-block;
+}
+
+nav a{
+    font-size: 18px;
+	display: inline-block;
+	padding: 10px 3%;
+    color: #A72608;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+/* Experience
+-----------------------------------*/
+
+.experience{
+	/*background: #FBECEC;*/
+	background: linear-gradient(rgba(232, 48, 0,1),rgba(251, 236, 236,1));
+	color: #090C02;
+	font-family: 'Fira Sans Light', sans-serif;
+}
+
+h3 ~ h4 {
+	margin: 0;
+}
+
+
+
+/* Education
+------------------------------------*/
+
+.education {
+	/*background: #E83000;*/
+	background: linear-gradient(rgba(232, 48, 0,1),rgba(251, 236, 236,0.85)),
+				url(../images/thuas.jpg) no-repeat fixed;
+	background-size: cover; 
+	color: #090C02;
+	font-family: 'Fira Sans Light', sans-serif;
+}
+
+
+
+
+.description{
+	line-height: 1.3;
+	font-size: 24px;
+}
+
+/* Media Queries
+----------------------------------*/
+
+
+@media (min-width: 700px){
+.navContainer{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 50px;
+    background: none;
+}
+
+.navContainer h4{
+   padding-left: 5%;
+}
+
+.navigation{
+	text-align: center;
+	background: #090C02;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	outline-style: ridge;
+	outline-color: #FBECEC;
+	z-index: 100;
+    display:inline-block;
+}
+
+nav a{
+    font-size: 18px;
+	display: inline-block;
+	padding: 10px 3%;
+    color: #A72608;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.navContainer h4{
+    color: #090C02;
+    text-align: left;
+}
+
+.navContainer .navigation{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.navContainer:hover .navigation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.navContainer:hover h4{
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+}
+
+@media (max-width: 1100px){
+    .navContainer h4{
+        font-size: 12px;
+        padding-left:5px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 900px){
+    
+    
+	header{
+		text-align: center;
+	}
+    
+    nav a{
+        font-size: 11px;
+    }
+
+	h1{
+		font-size: 100px;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	h2{
+		text-align: center;
+		font-size: 70px;
+	}
+
+	h3{
+		font-size: 45px;
+		margin-top: 80px;
+
+	}
+
+	h4{
+		font-size:25px;
+		margin-top: 12px;
+	}
+
+	header p{
+		font-size: 20px;
+	}
+
+	header h2{
+		font-size:50px;
+	}
+    
+    .navContainer{
+        text-align: left;
+    }
+
+	.profile-img{
+		width:200px;
+	}
+
+	.description{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 700px){
+	header{
+		padding:0;
+	}
+    
+	nav a{
+		display: block;
+		padding-top: 20px;
+		border-bottom: ridge;
+		border-color: #FBECEC;
+		border-bottom-width: 1px;
+	}
+    
+
+	h1{	
+	font-size: 80px;
+	letter-spacing: 0;
+	}
+
+	h2{
+		font-size: 50px;
+	}
+
+	h3{
+		font-size: 30px;
+		margin-top: 70px;
+
+	}
+
+	h4{
+		font-size:17px;
+		margin-top: 12px;
+	}
+
+	header p{
+		font-size: 15px;
+	}
+
+	header h2{
+		font-size:40px;
+	}
+
+	.description{
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	.up{
+		display:block;
+		position:fixed;
+		text-align: center;
+		top: 0;
+		right: 0;
+		padding: 10px 15px 0 15px;
+		border-bottom-left-radius: 20%;
+		border: ridge;
+		border-width: 2px;
+		border-color: #FBECEC;
+		border-top: none;
+		border-right: none;
+	}
+    
+    .navContainer{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 280px;
+    background: black;
+    }
+    
+    .navContainer h4{
+        margin-top: 0;
+        padding-left: 45%;
+        
+    }
+    
+	.navigation{
+		position: relative;
+	}
+    
+
+    
+	.download{
+		left:25%;
+		right:25%;
+		border:ridge;
+		margin-bottom: 10px;
+	}
+
+@media(max-width: 400px){
+	h1{	
+	font-size: 60px;
+	letter-spacing: 0;
+	}
+
+	h2{
+		font-size: 40px;
+	}
+
+	h3{
+		font-size: 24px;
+		margin-top: 70px;
+
+	}
+
+	h4{
+		font-size:16px;
+		margin-top: 12px;
+	}
+
+	header p{
+		font-size: 12px;
+	}
+
+	header h2{
+		font-size:30px;
+	}
+    
+
+	.description{
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+}
+}
