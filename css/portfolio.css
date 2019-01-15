@@ -117,6 +117,11 @@ a:hover{
     border-radius: 25%;
 }
 
+.mobile{
+    display:none;
+}
+
+
 
 /* Header and Footer
 ------------------------------------*/
@@ -327,6 +332,16 @@ nav a{
     transition: opacity 0.5s;
     opacity: 0;
 }
+    
+.navContainer:active .navigation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.navContainer:active h4{
+    transition: opacity 0.5s;
+    opacity: 0;
+}
 }
 
 @media (max-width: 1100px){
@@ -385,6 +400,46 @@ nav a{
 	header h2{
 		font-size:50px;
 	}
+    
+    .mobile{
+        position:relative;
+        height:400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:50%;
+        width:100%;
+        
+    }
+    
+    .thumbnail{
+        display:none;
+    }
+
+    .thumbnail2{
+        display:none;
+    }
+    
+    .text{
+        background:black;
+        color: #FFFFFF;
+        font-family: 'Fira Sans Light', sans-serif;
+        width:100%;
+        height:600px;
+        position:relative;
+    }
+
+
+    .text2{
+        margin:10%;
+        background:black;
+        color: #FFFFFF;
+        font-family: 'Fira Sans Light', sans-serif;
+        width:100%;
+        height:600px;
+        position:relative;
+        max-width: 90%;
+    }
     
     .navContainer{
         text-align: left;
@@ -462,12 +517,12 @@ nav a{
 	}
     
     .navContainer{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height: 280px;
-    background: black;
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        height: 280px;
+        background: black;
     }
     
     .navContainer h4{
@@ -479,8 +534,6 @@ nav a{
 	.navigation{
 		position: relative;
 	}
-    
-
     
 	.download{
 		left:25%;
