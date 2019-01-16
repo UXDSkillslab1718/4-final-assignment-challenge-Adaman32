@@ -266,6 +266,28 @@ nav a{
 	border-color: #FBECEC;
 }
 
+.tho{
+    margin-top: 5%;
+    height: auto;
+    width: 700px;
+}
+
+.tho.logo{
+    width:auto;
+    height:600px;
+}
+
+.thoTopic{
+    color:#801114;
+}
+
+.thoText{
+    background:none;
+    margin-top: 0;
+    margin-left: 10%;
+    max-width: 500px;
+}
+
 h3 ~ h4 {
 	margin: 0;
 }
