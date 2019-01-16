@@ -217,7 +217,7 @@ nav a{
     background-size:cover;
 	color: #FFFFFF;
 	font-family: 'Fira Sans Light', sans-serif;
-    width:45%;
+    width:40%;
     height:600px;
 }
 
@@ -232,12 +232,12 @@ nav a{
 
 .text2{
     position:absolute;
-    right:0;
+    right:4%;
     background:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,0));
     background-size:cover;
 	color: #FFFFFF;
 	font-family: 'Fira Sans Light', sans-serif;
-    width:45%;
+    width:40%;
     height:600px;
     z-index: 100;
 }
