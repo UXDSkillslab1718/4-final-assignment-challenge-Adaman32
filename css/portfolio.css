@@ -156,11 +156,13 @@ header a {
 
 /*footer*/
 
+
 footer {
 	background: #A72608;
 	color: #FBECEC;
 	text-align: center;
 }
+
 
 footer h2 {
 	margin:0;
@@ -286,6 +288,14 @@ nav a{
     margin-top: 0;
     margin-left: 10%;
     max-width: 500px;
+}
+
+.id{
+    margin-left: 100px;
+}
+
+.bespoke{
+    color:#ffadd0;
 }
 
 h3 ~ h4 {
