@@ -264,7 +264,7 @@ nav a{
 .download {
     margin:15px;
     margin-left:43%;
-	border: ridge;
+	border: none;
 	border-color: #FBECEC;
 }
 
@@ -570,7 +570,7 @@ nav a{
 	.download{
 		left:25%;
 		right:25%;
-		border:ridge;
+		border:none;
 		margin-bottom: 10px;
 	}
 
